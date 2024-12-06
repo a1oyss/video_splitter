@@ -1,4 +1,8 @@
+import os
+
 import click
+
+from video_splitter.main import process_video
 
 
 @click.command()
@@ -42,10 +46,9 @@ def main(
     process_video(
         video_path=video_path,
         black_min_duration=black_min_duration,
-        picture_black_ratio_th=picture_black_ratio_th,
+        pic_black_ratio_th=picture_black_ratio_th,
         pixel_black_th=pixel_black_th,
     )
-
 
 if __name__ == "__main__":
     main()
