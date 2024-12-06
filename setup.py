@@ -10,4 +10,5 @@ setup(
     author="a1oyss",
     packages=find_packages(),
     install_requires=required_packages,
+    entry_points={"console_scripts": ["video_splitter=video_splitter.__main__:main"]},
 )
